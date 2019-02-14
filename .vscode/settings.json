@@ -1,0 +1,9 @@
+{
+    "jshint.lintHTML": true,
+        
+     "jshint.options":{
+         "esversion": 6
+     }
+   
+     
+}

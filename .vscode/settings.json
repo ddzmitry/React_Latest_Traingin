@@ -3,7 +3,18 @@
         
      "jshint.options":{
          "esversion": 6
-     }
-   
+     },
+     "editor.formatOnSave": false,
+     // Enable per-language
+    //  "[javascript]": {
+    //      "editor.formatOnSave": true
+    //  },  
+     "trailingComma": "es5",
+     "tabWidth": 4,
+     "semi": false,
+    "singleQuote": true,
+    "jest.coverageFormatter": "GutterFormatter",
+    "prettier.requireConfig": true
+     
      
 }

@@ -1,20 +1,17 @@
 {
-    "jshint.lintHTML": true,
-        
-     "jshint.options":{
-         "esversion": 6
-     },
-     "editor.formatOnSave": false,
-     // Enable per-language
-    //  "[javascript]": {
-    //      "editor.formatOnSave": true
-    //  },  
-     "trailingComma": "es5",
-     "tabWidth": 4,
-     "semi": false,
-    "singleQuote": true,
+
     "jest.coverageFormatter": "GutterFormatter",
-    "prettier.requireConfig": true
-     
-     
+    "prettier.requireConfig": true,
+    "prettier.eslintIntegration": true,
+    "prettier.stylelintIntegration": true,
+    "eslint.autoFixOnSave": false,
+    "prettier.jsxBracketSameLine": true,
+    "javascript.validate.enable": false,
+    "json.format.enable": false,
+    "typescript.format.enable": false,
+    "html.format.enable": false,
+    "editor.formatOnSave": true,
+    "javascript.format.enable": true
+
+
 }

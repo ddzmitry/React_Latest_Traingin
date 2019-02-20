@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import SeasonDisplay from './components/seasonDisplay';
-
+import Spinner from './components/spinner';
 class App extends Component {
 
   state = { lat: null, long: null, error: null, waiting: true }
@@ -24,10 +24,13 @@ class App extends Component {
     console.log(prevProps, prevState)
   }
 
+  renderContent(){
+   return (this.state.waiting ? <Spinner message="Please,accept location request"/> :  <SeasonDisplay {...this.state} /> )
+  }
   render() {
     return (
       <div className="App">
-        <SeasonDisplay {...this.state} />
+              {this.renderContent()}
       </div>
     );
   }

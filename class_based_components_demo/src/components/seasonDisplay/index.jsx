@@ -1,8 +1,10 @@
 
 import React, { Component } from 'react';
+import './SeasonDisplay.css';
+import '../spinner';
 
 const getSeason = (lat, month) => {
-    console.log(month)
+
     if(month > 2 && month < 9) {
         return lat > 0 ? 'summer' : 'winter';
     } else {
@@ -10,20 +12,34 @@ const getSeason = (lat, month) => {
     }
 
 }
+const seasonConfig = {
+    summer: {
+        text: "Let's hit the beach",
+        icon: "sun icon"
+    },
+    winter: {
+        text: "Brr... Cold",
+        icon: "snowflake icon"
+    }
+}
 class seasonDisplay extends Component {
 
     render(props) {
         const season = getSeason(this.props.lat,new Date().getMonth());
-        const icon = season === 'winter' ? 'snowflake icon' : 'sun icon';
+        const {text,icon} = seasonConfig[season];
+
         return (
-            <div>
-                <i className={`${icon}`}></i>
+            
+            <div className={`season-display ${season}`}>
                 
-                {season === 'winter' ? 'brr chilly'   : 'lets hit the beach <i class="sun icon"></i>'}
-                <br />
+                <i className={`icon-left massive ${icon}`}></i>                   
+                <h1>{text}</h1>
+                {/* <br />
                 {this.props.waiting ? "Waiting on Fetch" : this.props.lat ? `Lattiture: ${this.props.lat}` : `Error: ${this.props.error}`}
                 <br />
                 {this.props.waiting ? "Waiting on Fetch" : this.props.long ? `Longitude: ${this.props.lat}` : `Error: ${this.props.error}`}
+                <br /> */}
+                <i className={`icon-right massive ${icon}`}></i>   
             </div>
         );
     }

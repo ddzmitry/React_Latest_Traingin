@@ -5,9 +5,6 @@ class App extends Component {
 
   state = { lat: null, long: null, error: null, waiting: true }
 
-  componentWillMount() {
-
-  }
   componentDidMount() {
 
     window.navigator.geolocation.getCurrentPosition(
@@ -24,13 +21,13 @@ class App extends Component {
     console.log(prevProps, prevState)
   }
 
-  renderContent(){
-   return (this.state.waiting ? <Spinner message="Please,accept location request"/> :  <SeasonDisplay {...this.state} /> )
+  renderContent() {
+    return (this.state.waiting ? <Spinner message="Please,accept location request" /> : <SeasonDisplay {...this.state} />)
   }
   render() {
     return (
       <div className="App">
-              {this.renderContent()}
+        {this.renderContent()}
       </div>
     );
   }

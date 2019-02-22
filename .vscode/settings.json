@@ -11,7 +11,29 @@
     "typescript.format.enable": false,
     "html.format.enable": false,
     "editor.formatOnSave": true,
-    "javascript.format.enable": true
-
-
+    "javascript.format.enable": true,
+    "editor.fontFamily": "'Operator Mono', Menlo, Monaco, 'Courier New', monospace",
+    "editor.fontSize": 16,
+    "editor.lineHeight": 20,
+    "editor.quickSuggestionsDelay": 500,
+    "editor.letterSpacing": 1.1,
+    "editor.fontWeight": "100",
+    "editor.autoIndent": true,
+    "window.closeWhenEmpty": true,
+    "editor.detectIndentation": false,
+    "files.insertFinalNewline": true,
+    "editor.showFoldingControls": "always",
+    "editor.find.seedSearchStringFromSelection": true,
+    "editor.matchBrackets": true,
+    "workbench.editor.enablePreview": true,
+    "editor.scrollBeyondLastLine": true,
+    "editor.useTabStops": true,
+    "editor.formatOnPaste": true,
+      "workbench.activityBar.visible": false,
+  "workbench.sideBar.location": "left",
+  "editor.renderWhitespace": "none",
+  "editor.rulers": [
+    80,
+    100
+  ],
 }

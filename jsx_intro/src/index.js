@@ -7,7 +7,6 @@ import ApprovalCard from "./components/approvalcard";
 import faker from "faker";
 let today = new Date();
 
-
 let getTime = () =>
   today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
 let getDate = () =>

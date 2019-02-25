@@ -1,10 +1,10 @@
 import React from 'react';
-
+import './ImageList.css';
 import Image from '../image';
 const Imagelist = (props) => {
     return (
-        <div>
-            {props.images.map((props,key) => <Image key={key} {...props} />)}            
+        <div className="image-list">
+            {props.images.map((props, key) => <Image key={key} {...props} />)}
         </div>
     )
 }

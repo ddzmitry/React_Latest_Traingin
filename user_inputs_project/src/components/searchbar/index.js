@@ -7,9 +7,9 @@ class Searchbar extends Component {
         this.setState({term:event.target.value})
     }
     onFormSubmit = (event) => {
+            this.props.onSubmit(this.state.term)
             this.setState({term:''})
             event.preventDefault();
-
          }
     render() {
         return (

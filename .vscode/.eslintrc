@@ -131,7 +131,6 @@
     ]
   },
   "plugins": [
-    // "html",
     "prettier"
   ]
 }

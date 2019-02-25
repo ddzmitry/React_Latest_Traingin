@@ -1,6 +1,4 @@
 {
-
-    "jest.coverageFormatter": "GutterFormatter",
     "prettier.requireConfig": true,
     "prettier.eslintIntegration": true,
     "prettier.stylelintIntegration": true,
@@ -13,11 +11,11 @@
     "editor.formatOnSave": true,
     "javascript.format.enable": true,
     "editor.fontFamily": "'Operator Mono', Menlo, Monaco, 'Courier New', monospace",
-    "editor.fontSize": 16,
-    "editor.lineHeight": 20,
+    "editor.fontSize": 17,
+    "editor.lineHeight": 19,
     "editor.quickSuggestionsDelay": 500,
     "editor.letterSpacing": 1.1,
-    "editor.fontWeight": "100",
+   "editor.fontWeight": "100",
     "editor.autoIndent": true,
     "window.closeWhenEmpty": true,
     "editor.detectIndentation": false,

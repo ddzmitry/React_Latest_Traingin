@@ -1,9 +1,6 @@
 import React, { Component } from 'react'
 import SongList from '../songList';
-
-
 export class App extends Component {
-
   render() {
     return (
       <div className="ui container grid">

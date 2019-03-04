@@ -1,5 +1,8 @@
 import React, { Component } from 'react'
 import SongList from '../songList';
+import SongDetail from '../SongDetail';
+
+
 export class App extends Component {
   render() {
     return (
@@ -8,7 +11,11 @@ export class App extends Component {
             <div className="column eight wide">
                     <SongList />
             </div>
+                <div className="column eight wide">
+                    <SongDetail />
+                </div>
           </div>
+
       </div>
     )
   }

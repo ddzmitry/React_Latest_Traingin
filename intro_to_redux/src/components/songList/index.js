@@ -32,7 +32,6 @@ class SongList extends Component {
 
 const mapStateToProps = state => {
     // All songs 
-    console.log("MSTP",state)
     return { songs: state.songs };
 
 }

@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import {BrowserRouter, Route} from 'react-router-dom';
+import {BrowserRouter, Route, Link} from 'react-router-dom';
 
 const page1 = () => {
 
     return (
         <div>PageOne
-        <a href="/pagetwo"> Navigate to page two</a>
+        <Link to="/pagetwo"> Navigate to page two</Link>
         </div>
     )
 }
@@ -13,7 +13,7 @@ const page2 = () => {
 
     return (
         <div>PageTwo
-        <a href="/"> Navigate to page one</a>
+        <Link to="/"> Navigate to page one</Link>
 
         </div>
     )

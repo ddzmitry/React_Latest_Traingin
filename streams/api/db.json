@@ -1,0 +1,30 @@
+{
+  "streams": [
+    {
+      "title": "AA",
+      "description": "AAA",
+      "id": 1
+    },
+    {
+      "title": "AAss",
+      "description": "sssAAA",
+      "id": 2
+    },
+    {
+      "title": "AA",
+      "description": "AAA",
+      "id": 3
+    },
+    {
+      "title": "AAss",
+      "description": "sssAAA",
+      "id": 4
+    },
+    {
+      "title": "Poop",
+      "description": "BVar",
+      "userId": "106726403379742643113",
+      "id": 5
+    }
+  ]
+}

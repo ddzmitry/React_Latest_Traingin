@@ -9,6 +9,7 @@ import {
 } from './types';
 
 import streams from '../apis/streams';
+import history from '../history';
 
 export const signIn = (userId) => {
     return {
@@ -28,6 +29,7 @@ export const createStream = formValues => async (dispatch,getState) => {
     const response = await streams.post('/streams', {...formValues,userId})
     dispatch({ type: CREATE_STREAM, payload: response.data })
     // Get usert back to root route
+    history.push('/')
 }
 
 export const fetchStreams = () => async dispatch => {
@@ -40,9 +42,11 @@ export const fetchStream = (id) => async dispatch => {
     dispatch({ type: FETCH_STREAM, payload: response.data });
 }
 
-export const editStream = (id, formValues) => async dispatch => {
-    const response = await streams.put(`/streams/${id}`, formValues);
+export const editStream = (id, formValues) => async (dispatch, getState) => {
+    const { userId } = getState().authReducer;
+    const response = await streams.patch(`/streams/${id}`, { ...formValues, userId });
     dispatch({ type: EDIT_STREAM, payload: response.data });
+    history.push('/')
 }
 
 export const deleteStream = (id) => async dispatch => {

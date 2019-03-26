@@ -15,6 +15,7 @@ class StreamEdit extends React.Component {
         if (!this.props.stream) {
             return <div>Loading...</div>
         } else {
+            // or use lodash _.pick(this.props.stream,'title','descript)
             const { title, description } = this.props.stream
             return <StreamForm onSubmit={this.onSubmit} initialValues={{ title, description }} />
         }
